@@ -1,13 +1,13 @@
 {
-  "presets": [
-    ["es2015", {"modules": false}],
-    "stage-0",
-    "react"
-  ],
+  "presets": ["next/babel"],
   "plugins": [
-    "react-hot-loader/babel",
-    "transform-runtime",
-    "transform-decorators-legacy",
-    "markdown-in-js/babel"
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
   ]
 }
